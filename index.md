@@ -1,6 +1,6 @@
 # Greetings
 
-Welcome to my page, this is Emirhan.
+I am Emirhan aka liophire.
 
 Today, we are going to complete this page, as part of [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 
@@ -28,10 +28,7 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pjournal/gh-pages-template/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Contact
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can contact me through [e-mail](mailto:sahinem@mef.edu.tr) or [LinkedIn](https://www.linkedin.com/in/emirhan-sahin/)
