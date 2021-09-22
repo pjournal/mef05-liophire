@@ -9,11 +9,10 @@ Today, we are going to complete this page, as part of [Data Analytics Essentials
 _The box below includes subjects and tasks that are done in class._
 
 ```markdown
-*1. Week 1*
+`1. Week 1`
     - Editing the journal page.
     - Introduction to R
 
- `Code` 
 
 ```
 
