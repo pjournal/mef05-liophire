@@ -1,32 +1,22 @@
 # Greetings
 
-I am Emirhan aka [liophire](https://github.com/liophire).
+I am `Emirhan` aka [liophire](https://github.com/liophire).
 
 Today, we are going to complete this page, as part of [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 
-### Markdown
+### Assingments
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+_The box below includes subjects and tasks that are done in class._
 
 ```markdown
-Syntax highlighted code block
+**1. Week 1** 
+    - Editing the journal page.
+    - Introduction to R
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
+ `Code` text
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 
 ### Contact
