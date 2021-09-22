@@ -2,7 +2,7 @@
 
 I am `Emirhan` aka [liophire](https://github.com/liophire).
 
-Today, we are going to complete this page, as part of [Data Analytics Essentials](https://mef-bda503.github.io/) Class
+Today, we are going to edit this page, as part of [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 
 ### In-Class
 
