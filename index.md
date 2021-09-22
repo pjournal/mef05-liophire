@@ -31,4 +31,4 @@ For more details see [GitHub Flavored Markdown](https://guides.github.com/featur
 
 ### Contact
 
-You can contact me through [e-mail](mailto:sahinem@mef.edu.tr) or [LinkedIn](https://www.linkedin.com/in/emirhan-sahin/)
+You can contact me through [email](mailto:sahinem@mef.edu.tr) or [LinkedIn](https://www.linkedin.com/in/emirhan-sahin/)
