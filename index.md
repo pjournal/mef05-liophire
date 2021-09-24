@@ -1,9 +1,13 @@
 <br>
+
 # Greetings
 <br>
 I am `Emirhan` aka [liophire](https://github.com/liophire) and this page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 <br>
+
 # Assignments
+<br>
+Here is a list of assignments that are done during my master's in [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 ### 1. Assignment 1 - Week 1
 
 
