@@ -2,7 +2,7 @@
 
 I am `Emirhan` aka [liophire](https://github.com/liophire).
 
-Today, we are going to edit this page, as part of [Data Analytics Essentials](https://mef-bda503.github.io/) Class
+This page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 
 ### In-Class
 
@@ -19,6 +19,6 @@ _The box below includes subjects and tasks that are done in class._
 
 ### Contact
 
-You can contact me through [email](mailto:sahinem@mef.edu.tr) or [LinkedIn](https://www.linkedin.com/in/emirhan-sahin/)
-
+You can contact me through [email](mailto:sahinem@mef.edu.tr), take a look at my [LinkedIn](https://www.linkedin.com/in/emirhan-sahin/) page or ask me on [Twitter](https://twitter.com/liophire).
+<br>
 ![Random Image](https://www.brightbits.co/wp-content/uploads/2019/05/lipsum.png)
