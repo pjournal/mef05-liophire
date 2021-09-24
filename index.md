@@ -1,4 +1,3 @@
-<br>
 # Greetings
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am `Emirhan Şahin` a.k.a. [liophire](https://github.com/liophire) and this page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class.
