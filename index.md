@@ -5,7 +5,7 @@
 
 # Assignments
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a list of assignments that are done in [Data Analytics Essentials](https://mef-bda503.github.io/) Class during my master's degree.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a list of assignments that are done in [Data Analytics Essentials](https://mef-bda503.github.io/) course during my master's degree.
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Assignment 1 - Week 1
 
 <br>
