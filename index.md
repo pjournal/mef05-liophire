@@ -1,20 +1,11 @@
-# Greetings
+## Greetings
 
 I am `Emirhan` aka [liophire](https://github.com/liophire).
 
 This page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class
 
-### In-Class
+# Assignments
 
-_The box below includes subjects and tasks that are done in class._
-
-```markdown
-`1. Week 1`
-    - [x] Editing the journal page.
-    - [ ] Introduction to R
-
-
-```
 
 
 ### Contact
