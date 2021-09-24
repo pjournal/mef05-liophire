@@ -1,7 +1,7 @@
 <br>
 # Greetings
 <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am `Emirhan` aka [liophire](https://github.com/liophire) and this page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am Emirhan Şahin aka `[liophire](https://github.com/liophire)` and this page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class.
 <br>
 
 # Assignments
