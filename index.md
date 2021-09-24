@@ -1,9 +1,9 @@
-## Greetings
-
-I am `Emirhan` aka [liophire](https://github.com/liophire).
-
 This page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class
-
+<br>
+## Greetings
+<br>
+I am `Emirhan` aka [liophire](https://github.com/liophire).
+<br>
 # Assignments
 
 
