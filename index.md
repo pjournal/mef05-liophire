@@ -18,6 +18,7 @@ body {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a list of assignments that are done in [Data Analytics Essentials](https://mef-bda503.github.io/) course during my master's degree.
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Assignment 1 - Week 1
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there is a piece of detailed personal information about me with some interesting and educational R posts and videos.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link]()___.
 
 <br>
