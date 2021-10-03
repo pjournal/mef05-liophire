@@ -19,7 +19,7 @@ body {
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Assignment 1 - Week 1
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there is a piece of detailed personal information about me with some interesting and educational R posts and videos.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link]()___.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/Task1_RMarkDown.html)___.
 
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Assignment 2 - Week 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
