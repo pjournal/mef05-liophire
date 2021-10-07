@@ -21,10 +21,10 @@ body {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/Task1_RMarkDown.nb.html)___.
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Assignment 2 - Week 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Assignment 2 - Week 3
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there are 4 exercise questions to be solved.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/Exercises_1.nb.html)___
 <br>
 <br>
 
