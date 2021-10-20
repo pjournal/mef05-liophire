@@ -25,6 +25,11 @@ body {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there are 4 exercise questions that are related to dplyr, lubridate and tidyverse to be solved.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/Exercises_1.nb.html)___
+
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Assignment 3 - Week 5
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there is csv file which contains information about Izmir's fish market prices. I used tidyverse, dplyr and ggplot2 to create some insights.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/balik_hal_fiyatlari.nb.html)___
 <br>
 <br>
 
