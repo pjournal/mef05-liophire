@@ -1,0 +1,151 @@
+---
+title: "**BDA-503 Week 5 - Izmir Fish Market Assignment**"
+author: "_Emirhan Şahin_"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+    html_notebook:
+        toc: true
+        toc_depth: 3
+        toc_float:
+            collapsed: false
+---
+<br>
+<style>
+#TOC {
+    color: #404040;
+    font-size: 13px;
+    border-color: #000000;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+h1.title {
+    color: #404040;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+h4.author {
+    color: #404040;
+    font-size: 12px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+h4.date {
+    color: #404040;
+    font-size: 12px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+}
+body {
+    color: #696969;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
+    background-color: #F5F5F5;
+    font-size: 16px;
+</style>
+
+# &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#404040">**Izmir Fish Market 2021 Daily Prices**</span>
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this assignment, we will go into the details of the CSV file that is obtained by Izmir Metropolitan Municipality's **[Open Data website.](https://acikveri.bizizmir.com/en/dataset/balik-hal-fiyatlari/resource/022e9a4d-b184-495f-8dc2-734fb07e350c=)**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **[The data](https://openfiles.izmir.bel.tr/100160/docs/balik_hal_fiyatlari.csv)** in the link has already loaded as seen below, also necessary packages in the background, let's get on to the analyzes and reports of the data.
+```{r, include = FALSE}
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+```
+
+```{r, message = FALSE}
+df <- read_delim("balik_hal_fiyatlari.csv", delim = ";")
+```
+
+<br>
+
+### **1-) Finding the Outliers and Removing Them**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; For starters, we have to decide how we are going to detect the outliers. I have chosen to locate outliers with [the IQR method](https://www.statisticshowto.com/probability-and-statistics/interquartile-range/).
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As seen below, I reverse engineered the original IQR method then used the [filter function](https://www.rdocumentation.org/packages/dplyr/versions/0.7.8/topics/filter) to demonstrate the outliers.
+
+```{r}
+df_outliers <- df %>%
+  group_by(MAL_ADI) %>%
+  transmute(AZAMI_UCRET, ASGARI_UCRET, FARK = AZAMI_UCRET - ASGARI_UCRET,
+            IQR_FARK = IQR(FARK),
+            UPPER = quantile(FARK, 0.75) + IQR_FARK * 1.5,
+            LOWER = quantile(FARK, 0.25) - IQR_FARK * 1.5) %>%
+  filter(!(FARK <= UPPER & FARK >= LOWER))
+df_outliers
+```
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The code below demonstrates how I grouped and filtered the original data. Then instead of adjusting it, I created a new data frame called `df_no_outlier` which will be used in other calculations. I also used ungroup function so the new data frame is almost the same as the original data frame. The only difference is the outliers.
+
+```{r}
+df_no_outlier <- df %>%
+  group_by(MAL_ADI) %>%
+  mutate(FARK = AZAMI_UCRET - ASGARI_UCRET,
+         IQR_FARK = IQR(FARK),
+         UPPER = quantile(FARK, 0.75) + IQR_FARK * 1.5,
+         LOWER = quantile(FARK, 0.25) - IQR_FARK * 1.5) %>%
+  filter(FARK <= UPPER & FARK >= LOWER) %>%
+  ungroup()
+```
+
+<br>
+
+### **2-) Daily Maximum Price Difference in 2 Periods**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In this part of the code, I separated the data into two, depending on the dates that fishing was banned throughout the country and not banned. `yasak_fark` demonstrates the maximum difference in daily prices during the ban period. `serbest_fark` does the same but during the times that fishing was not banned.
+
+```{r}
+yasak_fark <- df_no_outlier %>%
+  filter(TARIH >= "2021-04-15" & TARIH <= "2021-08-31") %>%
+  group_by(MAL_ADI) %>%
+  summarise(FARK = max(AZAMI_UCRET - ASGARI_UCRET))
+serbest_fark <- df_no_outlier %>%
+  filter(!(TARIH >= "2021-04-15" & TARIH <= "2021-08-31")) %>%
+  group_by(MAL_ADI) %>%
+  summarise(FARK = max(AZAMI_UCRET - ASGARI_UCRET))
+```
+
+<br>
+
+### **3-) Visualization of the Differences between 2 Periods**
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the code below I joined two data frames in order to get the compare the differences in different periods.
+
+```{r}
+farklar <- serbest_fark %>%
+  inner_join(yasak_fark, by = "MAL_ADI", suffix = c("_SERBEST", "_YASAK")) %>%
+  mutate(DONEM_FARK = FARK_SERBEST - FARK_YASAK) %>%
+  arrange(desc(DONEM_FARK))
+```
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Just for the hardware's sake, I only took the differences in the head and the tail of the data frame.
+
+```{r}
+first_n_last <- bind_rows(head(farklar), tail(farklar)) %>%
+  mutate(MAL_ADI = fct_reorder(MAL_ADI, DONEM_FARK))
+```
+
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This code below is used to create a horizontal barplot.
+
+```{r}
+ggplot(first_n_last, aes(x = MAL_ADI, y = DONEM_FARK, fill = MAL_ADI)) +
+  geom_col() +
+  geom_text(aes(label=DONEM_FARK), size = 3) +
+  coord_flip() +
+  ggtitle("Change in the price differences") +
+  xlab("Fish Name") + ylab("Difference(TL)") +
+  theme(legend.position = "none")
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; As seen above after eliminating the outliers which probably were a result of manipulation of the fish market or temporary occasions, we can clearly see the change in the prices of the same fish.
+
+<br>
+<br>
+<br>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;___Thanks for reading...___
