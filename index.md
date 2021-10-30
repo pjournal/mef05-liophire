@@ -31,7 +31,7 @@ body {
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/balik_hal_fiyatlari.nb.html)___
 
-### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Assignment 4 - Week 7
+### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Assignment 4 - Week 7
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there is a csv url which contains data about Netflix. I used tidyverse, dplyr and ggplot2 to clean, process and visualize  the data mentioned.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can get to the page of the assignment through ___[this link](https://pjournal.github.io/mef05-liophire/netflix_data.nb.html)___
