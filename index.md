@@ -9,7 +9,7 @@ body {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;![Liophire](https://avatars.githubusercontent.com/u/80832988?v=4)
 
 # Greetings
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am **Emirhan Şahin** a.k.a. [liophire](https://github.com/liophire) and this page is solely used in [Data Analytics Essentials](https://mef-bda503.github.io/) Class.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I am **Emirhan Şahin** a.k.a. **[liophire](https://github.com/liophire)** and this page is solely used in **[Data Analytics Essentials](https://mef-bda503.github.io/)** Class.
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To see the assignments website of **Division Bell**, the group I am a member of, click ***[here.](https://pjournal.github.io/mef05g-division-bell)***
 <br>
@@ -17,7 +17,7 @@ body {
 
 # Assignments
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a list of assignments that are done in [Data Analytics Essentials](https://mef-bda503.github.io/) course during my master's degree.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here is a list of assignments that are done in **[Data Analytics Essentials](https://mef-bda503.github.io/)** course during my master's degree.
 ### &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Assignment 1 - Week 1
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this assignment, there is a piece of detailed personal information about me with some interesting and educational R posts and videos.
 
