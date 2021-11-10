@@ -13,7 +13,6 @@ body {
 <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To see the assignments page of **Division Bell**, the group I am a member of, click ***[here.](https://pjournal.github.io/mef05g-division-bell)***
 <br>
-<br>
 
 # Assignments
 
